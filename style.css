@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+    background-color:  teal: hsl(166, 100%, 37%);
+    font-family: 'Hanken Grotesk';
+}
+
+body {
+    background-color: hsl(221, 100%, 96%);
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    
+}
+
+
+.sideA, .sideB {
+    width:100%;
+    flex-grow: 1;
+}
+
+.sideA {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(46,43,233);
+    background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%); 
+    height: 450px;
+    width: 720px;
+    border-radius:5%;
+    
+}
+
+.sideA h2 {
+    text-align: center;
+    color: hsl(221, 100%, 96%);
+    margin-bottom: 35px;
+}
+
+.sideA h3 {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+}
+
+.sideAdata .resultsText {
+    text-align: center;
+    font-size: 16px;
+    color: hsl(166, 100%, 37%);
+    width: 75%;
+}
+
+.gradientCircle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: rgb(78,33,202);
+    background: rgb(78,33,202);
+    background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0) 100%); 
+}
+
+.gradientCircle .result {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top:40%;
+    left: 19%;
+    transform: translateY(-50%);
+    font-size: 65px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+.gradientCircle .total {
+    position: absolute;
+    top:47%;
+    left: 21%;
+    font-size: 14px;
+    color:  hsl(241, 100%, 89%)
+
+}
+
+/** ----------------------- side B ----------------------- **/
+
+.sideB {
+    position: relative;
+    z-index: -1;
+    height: 450px;
+    background-color:hsl(0, 0%, 100%) ;
+    margin-left: -50px;
+    width: 720px;
+
+}
+
+
+.sideBdata {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.sideB h2 {
+
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 35px; 
+    margin-top: 45px;
+   margin-left: 70px;
+}
+
+.sideBdata ul {
+position: relative;
+width: 245px;
+top: 20px;
+left: -43px;
+    list-style-type: none;
+}
+
+
+.sideBdata li {
+ 
+    margin: 10px 0;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.sideBdata li span img {
+    margin-top:-5px;
+    padding-right: 10px;
+    scale: 90%;
+}
+
+.sideBdata li .category {
+    display: inline;
+}
+
+.sideBdata li .catValue {
+    display: inline;
+    margin-left: 25px;
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
+
+.sideBdata li .maxValue {
+    display: inline;
+    margin: 0px 0px;
+    text-align: right;
+}
+
+.sideBdata .catValues {
+    display: inline;
+    margin-left: 15%;
+}
+
+.values {
+    padding-right: 5px ;
+}
+
+.listElement1 {
+    background-color: hsla(0, 100%, 67%,10%);
+    color:hsl(0, 100%, 67%);
+    display: flex;
+    justify-content: center;
+}
+
+.listElement2 {
+    background-color:hsla(39, 100%, 56%,10%);
+    color:hsl(39, 100%, 56%);  
+    display: flex;
+    justify-content: flex-start;  
+}
+
+.listElement3 {
+    background-color: hsla(166, 100%, 37%,10%);
+    color:hsl(166, 100%, 37%); 
+    display: flex;
+    justify-content: flex-start;   
+}
+
+.listElement4 {
+    background-color: hsla(234, 85%, 45%,10%);
+    color:hsl(234, 85%, 45% );
+    display: flex;
+    justify-content: flex-start;    
+}
+
+.sideB .button {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.button button {
+    width: 83%;
+    padding: 15px 20px;
+    background-color: hsla(224, 30%, 27%, 1);
+    color: white;
+    border: 0px solid;
+    border-radius: 25px;
+}
+
+.button button:hover {
+    background-image: linear-gradient(
+        180deg,
+        hsl(252deg 100% 67%) 0%,
+        hsl(250deg 97% 65%) 13%,
+        hsl(249deg 94% 64%) 25%,
+        hsl(248deg 91% 62%) 37%,
+        hsl(246deg 89% 60%) 50%,
+        hsl(245deg 87% 59%) 63%,
+        hsl(244deg 85% 57%) 75%,
+        hsl(242deg 83% 56%) 87%,
+        hsl(241deg 81% 54%) 100%
+      );
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .container {
+        padding: 0px 0px;
+        width: 0%;
+    }
+
+   .card {
+    display: block;
+    width: 100%;
+   } 
+
+   .sideA, .sideB {
+    width:100%;
+    }
+
+    .gradientCircle {
+        width: 170px;
+        height: 170px;
+    }
+
+    .gradientCircle .result {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        left: 0%;
+        font-size: 65px;
+        font-weight: 800;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .gradientCircle .total {
+        position: relative;
+        top: 10%;
+        text-align: center;
+        left: 0%;
+        font-size: 14px;
+    }
+
+    .sideA {
+        border-radius:0px 0px 25px 25px;
+        
+    }
+
+    .sideB {
+        position: relative;
+        z-index: -1;
+        height: 450px;
+        background-color: hsl(0, 0%, 100%);
+        top: -60px;
+        margin-left: 0px;
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .sideBdata {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 100%;
+    }
+
+    .sideBdata ul {
+        position: relative;
+        width: 100%;
+        top: 0px;
+        left: -5%;
+        list-style-type: none;
+    }
+
+
+    .sideB .button {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button button {
+ 
+    width: 360px;
+    padding: 15px 20px;
+    background-color: hsla(224, 30%, 27%, 1);
+    color: white;
+    border: 0px solid;
+    border-radius: 25px;
+    }
+}

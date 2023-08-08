@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;600;800&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="sideA">
+        <div class="sideAdata">
+          <h2>Your Results</h2>
+          <div class="gradientCircle">
+            <p class="result">76</p>
+            <p class="total">of 100</p>
+          </div>
+          <h3>Great</h3>
+          <p class="resultsText">You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div class="sideB">
+        <h2>Summary</h2>
+        <div class="sideBdata">
+          <ul>
+            <li class="listElement1">
+              <div class="category">
+                <span>
+                  <img src="./assets/images/icon-reaction.svg" alt="">
+                </span>
+                  <p class="category">Reaction</p>
+              </div>
+              <div class="values">
+                <p class="catValue">80 </p>
+                <p class="maxValue">/ 100</p>
+              </div>
+            </li>
+            <li class="listElement2">
+              <div class="category">
+                <span>
+                  <img src="./assets/images/icon-memory.svg" alt="">
+                </span>
+                <p class="category">Memory</p>
+              </div>
+              <div class="values">
+                <p class="catValue">92 </p>
+                <p class="maxValue">/ 100</p>
+              </div>
+            </li>
+            <li class="listElement3">
+              <div class="category">
+                <span>
+                  <img src="./assets/images/icon-verbal.svg" alt="">
+                </span>
+                  <p class="category">Verbal</p>
+              </div>
+              <div class="values">
+                <p class="catValue">61 </p>
+                <p class="maxValue">/ 100</p>
+              </div>
+            </li>
+            <li class="listElement4">
+              <div class="category">
+              <span>
+                <img src="./assets/images/icon-visual.svg" alt="">
+              </span>
+                <p class="category">Visual</p>
+              </div>
+              <div class="values">
+                <p class="catValue">72 </p>
+                <p class="maxValue">/ 100</p>
+              </div>
+            </li>
+          </ul>
+          <div class="button">
+            <button type="submit">Continue</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ignacio Andres Rumbo</a>.
+  </div>
+</body>
+</html>
